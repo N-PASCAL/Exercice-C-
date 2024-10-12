@@ -3,17 +3,18 @@
 
 class Alive
 {
+protected: 
+
 	float maxHealth;
 	float currentHealth;
-	float dammage;
 
 public:
 
-	Alive(float _maxHealth, float _currentHealth, float _dammage);
+	Alive(float _maxHealth, float _currentHealth);
 
 	virtual float GetMaxHealth();
 	virtual float GetCurrentHealth();
-	virtual float TakeDammage(float _dammage);
+	virtual void TakeDammage(float _dammage);
 };
 
 #endif

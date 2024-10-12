@@ -1,6 +1,6 @@
 #include "Alive.h"
 
-Alive::Alive(float _maxHealth, float _currentHealth, float _dammage) : maxHealth(_maxHealth), currentHealth(_currentHealth) {
+Alive::Alive(float _maxHealth, float _currentHealth) : maxHealth(_maxHealth), currentHealth(_maxHealth) {
 
 }
 
@@ -13,7 +13,6 @@ float Alive::GetCurrentHealth() {
 	return this->currentHealth;
 }
 
-//Pas fini
-float Alive::TakeDammage() {
-
+void Alive::TakeDammage(float _dammage) {
+	currentHealth -= _dammage;
 }

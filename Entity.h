@@ -4,8 +4,11 @@
 #include "Vecteur2.h"
 
 class Entity {
-	Vecteur2 position;
+
+protected: Vecteur2 position;
+
 public:
+
 	Entity(float x, float y);
 
 	virtual Vecteur2 GetPosition();

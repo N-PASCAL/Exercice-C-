@@ -13,6 +13,8 @@ public:
 	float GetY();
 
 	void Set(float _x, float _y);
+
+	void Norm();
 };
 
 #endif 

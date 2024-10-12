@@ -5,6 +5,8 @@
 
 class AMovable
 {
+protected:
+
 	Vecteur2 direction;
 	float speed;
 
@@ -16,6 +18,7 @@ public:
 	virtual void SetDirection(Vecteur2 _direction);
 	virtual void SetSpeed(float _speed);
 	virtual void Move() = 0;
+	
 };
 
 #endif
